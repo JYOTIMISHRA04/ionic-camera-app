@@ -1,6 +1,4 @@
-import React from 'react';
-import { IonActionSheet, IonButton, IonIcon } from '@ionic/react';
-import { shareOutline, shareSharp } from 'ionicons/icons';
+import { IonActionSheet } from '@ionic/react';
 
 const UIActionSheet = ({ onExport }: any) => {
     return (
@@ -16,6 +14,7 @@ const UIActionSheet = ({ onExport }: any) => {
                             action: 'delete',
                         },
                         handler: (e: any) => onExport(e, '.jpg')
+
 
                     },
                     {

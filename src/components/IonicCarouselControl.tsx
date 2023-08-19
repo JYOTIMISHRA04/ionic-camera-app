@@ -19,13 +19,11 @@ export const IonicCarouselControl = ({ items, setSelectedFilter, setFilters, sel
         brightness: Konva.Filters.Brighten,
         contrast: Konva.Filters.Contrast,
         grayscale: Konva.Filters.Grayscale,
-        threshold: Konva.Filters.Mask,
-        hue: Konva.Filters.Blur,
+
         sepia: Konva.Filters.Sepia,
-        opacity: Konva.Filters.HSV,
-        saturation: Konva.Filters.HSL,
-        enhance: Konva.Filters.Enhance,
-        emboss: Konva.Filters.Emboss,
+
+        saturation: Konva.Filters.HSL
+
     };
 
     return (

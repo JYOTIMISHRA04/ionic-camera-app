@@ -33,42 +33,14 @@ const ImageFilterToolbar = ({ selectedFilter, setSelectedFilter, filterSettings,
             "max": 1,
             "defaultValue": 0
         },
-        "saturation": {
-            "property": "saturation",
-            "min": -1,
-            "max": 1,
-            "defaultValue": 0
-        },
-        "exposure": {
-            "property": "exposure",
-            "min": -1,
-            "max": 1,
-            "defaultValue": 0
-        },
-        "hue": {
-            "property": "hue",
-            "min": 0,
-            "max": 360,
-            "defaultValue": 0
-        },
+
         "grayscale": {
             "property": "grayscale",
             "min": 0,
             "max": 1,
             "defaultValue": 0
         },
-        "threshold": {
-            "property": "threshold",
-            "min": 0,
-            "max": 1,
-            "defaultValue": 0
-        },
-        "emboss": {
-            "property": "emboss",
-            "min": 0,
-            "max": 1,
-            "defaultValue": 0
-        },
+
         "enhance": {
             "property": "enhance",
             "min": 0,
@@ -81,12 +53,6 @@ const ImageFilterToolbar = ({ selectedFilter, setSelectedFilter, filterSettings,
             "max": 1,
             "defaultValue": 0
         },
-        "opacity": {
-            "property": "opacity",
-            "min": 0,
-            "max": 1,
-            "defaultValue": 0
-        }
     }
 
     const { min, max } = minMax[selectedFilter] || { min: 0, max: 100 }

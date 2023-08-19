@@ -1,28 +1,16 @@
-import React, { useState } from 'react'
-import ImageFilterToolbar from './ImageFilterToolbar'
-import ImageContainer from './ImageContainer'
-import Konva from 'konva';
-import { image } from 'ionicons/icons';
-import { IonCol, IonFooter, IonGrid, IonTitle, IonToolbar } from '@ionic/react';
-
-
-
-
+import { useState } from 'react';
+import ImageContainer from './ImageContainer';
+import ImageFilterToolbar from './ImageFilterToolbar';
 
 const ImageProcessor = ({ selectedImage }: any) => {
 
     const initialFilterSettings = {
         brightness: 0,
         contrast: 0,
-        saturation: 0,
-        exposure: 0,
-        hue: 0,
         grayscale: 0,
-        threshold: 0,
-        emboss: 0,
         enhance: 0,
         sepia: 0,
-        opacity: 0
+
     };
     const [filterArray, setFilterArray] = useState()
     const [filterSettings, setFilterSettings] = useState(initialFilterSettings);
